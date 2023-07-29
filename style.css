@@ -246,7 +246,7 @@ margin-left: 20px;
    
    
 }
-@media screen and (max-width:767px) {
+@media screen and (min-width:475px)and (max-width:767px) {
     .navBar{
         position:relative;
         display: flex;
@@ -273,6 +273,122 @@ margin-left: 20px;
     }
     .navBar  .icons{
         margin-top: 790px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    background: transparent;
+        display: none;
+        /* border: 1px solid red; */
+        
+    }
+    .navBar  .btn {
+        width: 92%;
+        text-align: center;
+        margin-right:20px ;
+    }
+    .navBar  .btn button{
+        margin-right: 0;
+    }
+    .navBar  .navLinks li{
+        margin-left: 0;
+        gap: 30px;
+        width: 100%;
+        margin-bottom: 25px;
+        /* border: 1px solid red; */
+        text-align: center;
+
+    }
+    .navBar  .navLinks li a{
+        color: white;
+    }
+    .navBar .icons li{
+       
+        background-color: #fff;
+        border-radius: 55px;
+       border: 2px solid #413f3f;
+        margin-left: 5px;
+    }
+   
+    .navBar  .icons .twt{
+        background-color: transparent;
+    }
+  
+    .navBar  li button{
+        border-radius: 35px;
+    }
+   
+    .navBar  #home{
+        border-bottom: 1px solid rgb(255, 252, 252);
+    }
+    .navBar  .menu{
+    width: 8%;   
+    display: block;
+    background-color: transparent;
+    border: none;
+     /* border: 1px solid red; */
+     text-align: center;  
+   } 
+   .navBar .menu a i{
+    font-size: 1.8rem;
+     margin-right: 17px;
+   }
+   .navBar  .close{
+    width: 8%;   
+   
+    background-color: transparent;
+    border: none;
+     /* border: 1px solid red; */
+     text-align: center;  
+   } 
+   .navBar  .close a i{
+    font-size: 2rem;
+     margin-right: 17px;
+   }
+   .navBar  .fa-xmark::before{
+    display: block;
+    /* border: 1px solid red; */
+    margin-left: 3px;
+    font-size: large;
+ 
+ }
+ .navBar  .fa-bars::before{
+    /* display: block; */
+    /* border: 1px solid red; */
+    margin-left: 3px;
+    font-size: large;
+ 
+ }
+ 
+   
+   
+}
+@media screen and (max-width:474px) {
+    .navBar{
+        position:relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0rem;
+        /* margin-top: 300px; */
+    }
+    .navBar   ul{
+        position: absolute;
+        background-color: #1b1b1b;
+        opacity: .99;
+        border-radius: 10px;
+        background-color: blur;
+       
+    }
+    .navBar  .navLinks{
+        margin-top: 500px;
+        width:100% ;
+        padding: 120px 0 140px;
+        flex-direction: column;
+        display: none;
+        /* border: 1px solid red; */
+    }
+    .navBar  .icons{
+        margin-top: 660px;
         display: flex;
         align-items: center;
         justify-content: center;
