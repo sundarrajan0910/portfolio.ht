@@ -1,0 +1,801 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*{margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    text-transform: capitalize;
+    /* background-color: ; */
+
+}
+
+body{
+    width: 100%;
+    background-color:#f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header{
+    width: 100%;
+    
+}
+.navContainer{
+  margin: 1rem;
+/* border: 1px solid red; */
+    
+
+}
+.navBar{
+    margin:0rem 5rem;
+    /* border: 1px solid red; */
+       display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navBar .navLinks{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0;
+    /* border: 1px solid red; */
+}
+.navBar .navLinks li{
+    /* width: 100%; */
+    text-align: left;
+    margin-left: 35px;
+    /* border: 1px solid red; */
+}
+.navBar .navLinks li a{
+    font-weight: 500;
+    padding-bottom: 4px;
+    /* border: 1px solid red; */
+    /* border-bottom: 1px solid red; */
+  
+}
+.navBar .icons{
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid red; */
+    padding: 0;
+}
+.navBar .icons li{
+    margin-left: 25px;
+
+}
+.navBar .icons li i{
+    font-size:24px ;
+
+}
+.navBar .btn{
+    width: 25%;
+    /* border: 1px solid red; */
+    text-align: center;
+    
+}
+
+.navBar .btn button{
+    border: none;
+   
+    /* border:1px solid red; */
+    border-radius: 40px;
+    width: 64px;
+    height: 64px;
+    margin-right: 45px;
+    background-color: rgb(0, 0, 0);
+
+}
+.navBar .btn button a{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+ }
+ .navBar  #home{
+    border-bottom: 1px solid black;
+ }
+ .navBar  li  button{
+    background-color: none ;
+    border: none;
+    
+ }
+ .navBar  .menu{
+    display: none;
+ }
+ .navBar  .close{
+    display:none ;
+ }
+
+
+ .fa-xmark::before{
+    display: none;
+ }
+
+
+@media screen and (min-width:1024px )and (max-width:1199px) {
+    .navBar  .icons li{
+margin-left: 20px;
+ }
+ .navBar .navLinks li{
+    margin-left: 28px;
+ }
+
+}
+
+
+ 
+@media screen and (min-width:768px )and (max-width:1023px) {
+    .navBar{
+        position:relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 2rem;
+        /* margin-top: 300px; */
+    }
+    .navBar   ul{
+        position: absolute;
+        background-color: #1b1b1b;
+        opacity: .98;
+        border-radius: 10px;
+        background-color: blur;
+       
+    }
+    .navBar  .navLinks{
+        margin-top: 600px;
+        width:80% ;
+        padding: 120px 0 140px;
+        flex-direction: column;
+        display: none;
+        /* border: 1px solid red; */
+    }
+    .navBar .icons{
+        margin-top: 790px;
+        width:40% ;
+        background-color: transparent;
+        font-size: 2rem;
+        display: none;
+        
+    }
+    .navBar .btn {
+        width: 92%;
+        text-align: center;
+        margin-right: 60px;
+    }
+    .navBar  .btn button{
+        margin-right: 0;
+    }
+    .navBar .navLinks li{
+        margin-left: 0;
+        gap: 30px;
+        width: 100%;
+        margin-bottom: 25px;
+        /* border: 1px solid red; */
+        text-align: center;
+
+    }
+    .navBar .navLinks li a{
+        color: white;
+    }
+    .navBar  .icons li{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+        border-radius: 55px;
+       border: 2px solid #413f3f
+    }
+    .navBar .icons li a i{
+        font-size: 1.5rem;
+
+    }
+    .navBar .icons .twt{
+        background-color: transparent;
+    }
+  
+    .navBar  li button{
+        border-radius: 35px;
+    }
+   
+    .navBar  #home{
+        border-bottom: 1px solid rgb(255, 252, 252);
+    }
+    .navBar   .menu{
+    width: 8%;   
+    display: block;
+    background-color: transparent;
+    border: none;
+     /* border: 1px solid red; */
+     text-align: center;  
+   } 
+   .navBar .menu a i{
+    font-size: 1.8rem;
+     margin-right: 17px;
+   }
+   .navBar .close{
+    width: 8%;   
+   
+    background-color: transparent;
+    border: none;
+     /* border: 1px solid red; */
+     text-align: center;  
+   } 
+   .navBar  .close a i{
+    font-size: 2rem;
+     margin-right: 17px;
+   }
+   .navBar .fa-xmark::before{
+    display: block;
+    /* border: 1px solid red; */
+    margin-left: 18px;
+ 
+ }
+ .navBar  .fa-bars::before{
+    /* display: block; */
+    /* border: 1px solid red; */
+    margin-left: 18px;
+ 
+ }
+ 
+   
+   
+}
+@media screen and (max-width:767px) {
+    .navBar{
+        position:relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0rem;
+        /* margin-top: 300px; */
+    }
+    .navBar   ul{
+        position: absolute;
+        background-color: #1b1b1b;
+        opacity: .99;
+        border-radius: 10px;
+        background-color: blur;
+       
+    }
+    .navBar  .navLinks{
+        margin-top: 570px;
+        width:100% ;
+        padding: 120px 0 140px;
+        flex-direction: column;
+        display: none;
+        /* border: 1px solid red; */
+    }
+    .navBar  .icons{
+        margin-top: 790px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    background: transparent;
+        display: none;
+        /* border: 1px solid red; */
+        
+    }
+    .navBar  .btn {
+        width: 92%;
+        text-align: center;
+        margin-right:20px ;
+    }
+    .navBar  .btn button{
+        margin-right: 0;
+    }
+    .navBar  .navLinks li{
+        margin-left: 0;
+        gap: 30px;
+        width: 100%;
+        margin-bottom: 25px;
+        /* border: 1px solid red; */
+        text-align: center;
+
+    }
+    .navBar  .navLinks li a{
+        color: white;
+    }
+    .navBar .icons li{
+       
+        background-color: #fff;
+        border-radius: 55px;
+       border: 2px solid #413f3f;
+        margin-left: 5px;
+    }
+   
+    .navBar  .icons .twt{
+        background-color: transparent;
+    }
+  
+    .navBar  li button{
+        border-radius: 35px;
+    }
+   
+    .navBar  #home{
+        border-bottom: 1px solid rgb(255, 252, 252);
+    }
+    .navBar  .menu{
+    width: 8%;   
+    display: block;
+    background-color: transparent;
+    border: none;
+     /* border: 1px solid red; */
+     text-align: center;  
+   } 
+   .navBar .menu a i{
+    font-size: 1.8rem;
+     margin-right: 17px;
+   }
+   .navBar  .close{
+    width: 8%;   
+   
+    background-color: transparent;
+    border: none;
+     /* border: 1px solid red; */
+     text-align: center;  
+   } 
+   .navBar  .close a i{
+    font-size: 2rem;
+     margin-right: 17px;
+   }
+   .navBar  .fa-xmark::before{
+    display: block;
+    /* border: 1px solid red; */
+    margin-left: 3px;
+    font-size: large;
+ 
+ }
+ .navBar  .fa-bars::before{
+    /* display: block; */
+    /* border: 1px solid red; */
+    margin-left: 3px;
+    font-size: large;
+ 
+ }
+ 
+   
+   
+}
+
+
+
+.aboutContainer {
+    /* width: 100%; */
+    margin: 1rem;
+    /* border: 1px solid red; */
+}
+
+.about {
+    /* width: 100%; */
+    margin: 3rem 5rem;
+    /* border: 1px solid red; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    /* gap: 30px; */
+}
+
+.about .image {
+    width: 50%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    /* margin-bottom: 2rem; */
+}
+
+.about figure {
+    width: 100%;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.about img {
+    width: 100%;
+    /* border: 1px solid red; */
+    object-fit: cover;
+}
+
+.about .description {
+    width: 50%;
+    /* border: 1px solid red; */
+
+}
+
+.about h2 {
+    font-size: 3rem;
+    margin-top: 75px;
+    line-height: 1;
+    margin-bottom: 30px;
+}
+
+.about p {
+    text-transform: none;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: black;
+}
+
+.about .btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* border: 1px solid red; */
+
+}
+
+.about button {
+    border: none;
+    background-color: none;
+    padding: 15px 28px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+    /* margin: 10px; */
+}
+
+.about button a {
+    color: white;
+    font-size: 18px;
+}
+
+.about button a i {
+    color: white;
+}
+
+.about h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #444444;
+    margin-left: 20px;
+    text-decoration: underline;
+}
+
+.about .bulb {
+    position: absolute;
+    width: 120px;
+    height: 200px;
+    /* border: 1px solid red; */
+    margin-left: 450px;
+    margin-top: 330px;
+}
+
+.about .bulb img {
+    width: 84%;
+
+}
+
+@media screen and (min-width:1024px) and (max-width:1199px) {
+    .about .bulb {
+        position: absolute;
+        width: 120px;
+        height: 200px;
+        /* border: 1px solid red; */
+        margin-left: 370px;
+        margin-top: 380px;
+    }
+
+    .about .bulb img {
+        width: 84%;
+
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1023px) {
+    .about .bulb {
+        position: absolute;
+        width: 120px;
+        height: 200px;
+        /* border: 1px solid red; */
+        margin-left: 820px;
+        margin-top: 480px;
+    }
+
+    .about .bulb img {
+        width: 84%;
+
+    }
+
+    .about {
+        margin: 3rem 3rem;
+    }
+
+    .about .image {
+        display: none;
+    }
+
+    .about .description {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 5rem;
+        text-align: center;
+    }
+
+    .about h2 {
+        font-size: 3.8rem;
+    }
+
+    .about .btn {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about p {
+        font-size: .94rem;
+    }
+    .aboutContainer{
+        padding-bottom: 5rem;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px) {
+    .about .bulb {
+        position: absolute;
+        width: 120px;
+        height: 200px;
+        /* border: 1px solid red; */
+        margin-left: 630px;
+        margin-top: 440px;
+    }
+    .aboutContainer{
+        padding-bottom: 5rem;
+    }
+    .about .bulb img {
+        width: 84%;
+
+    }
+
+    .about {
+        margin: 3rem 3rem;
+    }
+
+    .about .image {
+        display: none;
+    }
+
+    .about .description {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* margin-top: 5rem; */
+        text-align: center;
+    }
+
+    .about h2 {
+        font-size: 3.8rem;
+    }
+
+    .about .btn {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about p {
+        font-size: 1rem;
+        /* border: 1px solid red; */
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .about .bulb {
+        display: none;
+        /* position: absolute;
+        width: 120px;
+        height: 200px;
+        /* border: 1px solid red; */
+        /* margin-left: 820px;
+        margin-top: 480px; * */
+    }
+
+    /* .bulb img{width: 84%;} */
+
+    .about {
+        margin: 3rem 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about .image {
+        /* display: none; */
+        width: 100%;
+    }
+
+    .about .description {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 0rem;
+        text-align: center;
+        /* padding-top: 0; */
+    }
+
+    .about h2 {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-top: 0;
+    }
+
+    .about .btn {
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about p {
+        font-size: .78rem;
+        width: 90%;
+        text-align: center;
+    }
+
+    .about button {
+        padding: 9px 15px;
+    }
+
+    .about button a {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .about button a i {
+        font-size: 12px;
+    }
+
+    .about h4 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+}
+
+
+footer {
+    width: 100%;
+    margin-top: 20px;
+    border-top: 2.1px solid rgb(29, 28, 28);
+}
+
+footer .copyContainer {
+    margin: 1rem;
+    /* border: 1px solid red; */
+
+}
+
+footer .copyWrite {
+    margin: 5rem 4.5rem;
+    /* border: 1px solid red; */
+}
+
+footer .grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+}
+
+footer .col1,
+.col2 {
+    width: 100%;
+    /* border: 1px solid red; */
+    display: grid;
+    place-items: flex-end;
+
+}
+
+/* .col2 {
+    width: 100%;
+    /* border: 1px solid red; */
+/* display: grid;
+    place-items: flex-end;
+
+} */
+footer .col {
+    width: 100%;
+}
+
+footer .col2 a {
+    margin-right: 70px;
+}
+
+footer p {
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+}
+
+footer span {
+    font-size: 20px;
+    margin: 0 2px;
+}
+
+footer a {
+    text-decoration: underline;
+    font-size: 19px;
+    color: black;
+    font-weight: 500;
+}
+
+footer i {
+    font-size: 16px;
+    color: palevioletred;
+    margin: 0 4px;
+}
+
+footer .col1 p {
+    text-transform: none;
+}
+
+@media screen and (min-width:1024px) and (max-width:1199px) {
+    footer .copyWrite {
+        margin: 5rem 4rem;
+    }
+    footer{
+        margin-top: 5rem;
+    }
+
+
+}
+
+@media screen and (max-width:1023px) {
+
+    footer .grid {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: 1fr;
+        gap: 20px;
+
+    }
+
+    footer .col2,
+    .col,
+    .col1 {
+        display: grid;
+        place-items: center;
+    }
+
+    footer .copyWrite {
+        margin: 5rem 0rem;
+    }
+
+    footer p {
+        font-size: 16px;
+    }
+
+    footer a {
+        font-size: 16px;
+    }
+
+    footer i {
+        font-size: 14px;
+    }
+    footer .col1{
+        display: grid;
+        place-items: center;
+    }
+
+    footer .col2 a {
+        margin-right: 0;
+    }
+
+}
